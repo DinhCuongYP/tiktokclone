@@ -1,0 +1,29 @@
+.wrapper-modal {
+    position: relative;
+    width: 400px;
+    height: 280px;
+    padding: 40px 32px 32px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    color: var(--text-color);
+    background-color: var(--background-gray-color-03);
+}
+
+.title {
+    line-height: var(--line-height);
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0;
+}

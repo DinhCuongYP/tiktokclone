@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: var(--header-height);
+    width: var(--width-default);
+
+    .sidebar {
+        flex-shrink: 0;
+        width: 356px;
+    }
+}

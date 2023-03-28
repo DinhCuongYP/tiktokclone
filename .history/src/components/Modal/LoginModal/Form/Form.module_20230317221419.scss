@@ -1,0 +1,107 @@
+// ------ QR -------------------------
+.loginQR-wrapper {
+    display: flex;
+    margin-top: 48px;
+}
+
+.left-space {
+    flex-shrink: 0;
+    width: 180px;
+}
+
+.QR {
+    width: 180px;
+    height: 180px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #f2f2f2;
+}
+
+.img-QR {
+    width: 100%;
+}
+
+.step-list {
+    margin-top: 24px;
+}
+
+.step-item {
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+    font-weight: 400;
+}
+
+.right-space {
+    margin-left: 20px;
+}
+
+.img-guide {
+    height: 270px;
+}
+
+// ----------------- Email -----------------------------
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.form-title {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+
+.form-input {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    background-color: var(--background-color-gray-06);
+    border: 1px solid var(--background-gray-color-12);
+    margin-bottom: 9px;
+
+    input {
+        flex-grow: 1;
+        color: inherit;
+        background-color: transparent;
+        caret-color: var(--primary);
+        height: 100%;
+        font-size: 1.6rem;
+        padding-left: 12px;
+    }
+}
+
+.showPassword-btn {
+    cursor: pointer;
+    font-size: 2rem;
+    margin: 0 16px;
+    line-height: 0;
+}
+
+.forgot-password {
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--text-gray-color);
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.submit-btn {
+    width: 100%;
+    min-height: 46px;
+    margin-top: 21px;
+}
+
+.btn-toggleLogin {
+    color: var(--primary);
+    cursor: pointer;
+    font-weight: 600;
+    margin-left: 4px;
+}
+
+.btnShow-fullRegisterList {
+}

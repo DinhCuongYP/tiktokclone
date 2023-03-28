@@ -1,0 +1,30 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding: 8px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    justify-content: space-around;
+    margin-left: 12px;
+}
+
+.name,
+.user-name {
+    width: 107px;
+    height: 12px;
+    border-radius: 4px;
+}
+
+.name {
+}

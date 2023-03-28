@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    // Color
+    --primary: #fe2c55;
+    --white-color: #fff;
+    --white-color-2: #fff;
+    --white-color-3: #fff;
+    --text-color: #161823;
+    --gray-color: #a7a7ab;
+    --text-gray-color: rgba(22, 24, 35, 0.75);
+    --text-gray-color2: rgba(22, 24, 35, 0.5);
+    --background-gray-color-02: rgba(22, 24, 35, 0.2);
+    --background-gray-color-03: rgba(22, 24, 35, 0.03);
+    --background-color-gray-06: rgba(22, 24, 35, 0.06);
+    --background-gray-color-12: rgba(22, 24, 35, 0.12);
+    --background-gray-color-16: rgba(22, 24, 35, 0.16);
+    --background-gray-color-34: rgba(22, 24, 35, 0.34);
+    --background-disable-color: #f5f5f5;
+
+    --background-primary-color: #fe2c55;
+
+    // font family
+    --font-family: 'ProximaNova', sans-serif;
+    --line-height: 22px;
+    //
+    --header-height: 60px;
+    --width-default: 1150px;
+    // Box Shadow
+    --box-shadow-header: 0px 1px 1px rgba(0, 0, 0, 0.12);
+
+    --box-shadow-popper: rgba(0, 0, 0, 0.12) 0px 2px 12px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    text-rendering: optimizespeed;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: var(--font-family);
+    line-height: 1.5rem;
+    color: var(--text-color);
+    background-color: var(--white-color);
+
+    &.hidden {
+        overflow: hidden;
+    }
+}
+
+// Dark mode
+[data-theme='dark']:root {
+    --text-color: #ffffffe6;
+    --text-gray-color: #ffffffbf;
+    --text-gray-color2: #ffffff80;
+
+    --white-color: #121212;
+    --white-color-2: hsla(0, 0%, 100%, 0.08);
+    --white-color-3: #252525;
+
+    --background-disable-color: rgb(112, 112, 112);
+    --background-color-gray-02: rgba(255, 255, 255, 0.2);
+    --background-gray-color-03: rgba(255, 255, 255, 0.04);
+    --background-color-gray-06: rgba(255, 255, 255, 0.122);
+    --background-color-gray-34: rgba(255, 255, 255, 0.34);
+    --background-gray-color-12: rgba(255, 255, 255, 0.12);
+
+    --box-shadow-header: rgb(255 255 255 / 12%) 0px 1px 1px;
+    --box-shadow-popper: rgb(255 255 255 / 12%) 0px 2px 12px;
+
+    --border-color-style: transparent;
+    --background-primary-color2: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), #fe2c55;
+}
+
+//  Font Family
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/fonts/ProximaNova-Semibold.woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/fonts/Proxima-Nova-Semibold.woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/fonts/Proxima-Nova-Regular.woff2');
+    font-weight: 400;
+}
+
+//
+
+button {
+    cursor: pointer;
+}
+
+button,
+input {
+    outline: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+html ::-webkit-scrollbar {
+    border-radius: 0px;
+    width: 8px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: var(--background-color-gray-06);
+}
+
+html ::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background-color: transparent;
+}
+
+// Custom Tippy
+body {
+    .tippy-box {
+        background-color: var(--white-color-3);
+        border-radius: 8px;
+    }
+
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-box[data-placement^='bottom'] > .tippy-arrow:before {
+        top: -8px;
+    }
+
+    .tippy-content {
+        padding: 8px;
+        line-height: var(--primary-line-height);
+        font-weight: 600;
+        font-size: 1.6rem;
+    }
+}

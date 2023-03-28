@@ -1,0 +1,13 @@
+.modal-wrapper {
+    width: 400px;
+    height: 543px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 4px;
+    background-color: transparent;
+    color: var(--text-primary-color);
+}

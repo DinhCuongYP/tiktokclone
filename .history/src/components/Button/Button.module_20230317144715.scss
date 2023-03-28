@@ -1,0 +1,60 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    min-height: 36px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 4px;
+    background-color: var(--white-color);
+    cursor: pointer;
+
+    + .btn {
+        margin-left: 16px;
+    }
+}
+
+.upload {
+    min-width: 100px;
+    border-color: rgba(22, 24, 35, 0.12);
+    border-radius: 2px;
+    padding: 0 16px;
+    background-color: var(--white-color);
+
+    &:hover {
+        background-color: var(--background-gray-color-03);
+    }
+}
+
+.login {
+    background-color: var(--primary);
+    color: var(--white-color);
+    line-height: 2.2rem;
+    min-width: 100px;
+
+    &:hover {
+        background-color: var(--background-primary-color);
+    }
+}
+.icon {
+    line-height: 0;
+}
+
+.icon + .text,
+.text + .icon {
+    margin-left: 8px;
+}
+
+.disable {
+    background-color: var(--background-disable-color);
+    color: rgb(50, 50, 50);
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.loginForm {
+    width: 100%;
+    min-height: 46px;
+    background-color: var(--primary);
+}

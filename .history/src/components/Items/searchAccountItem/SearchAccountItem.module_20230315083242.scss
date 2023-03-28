@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    cursor: pointer;
+    padding: 9px 16px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.body {
+    margin-left: 12px;
+    overflow: hidden;
+}

@@ -1,0 +1,12 @@
+.modal-wrapper {
+    --wrapper-width: 484px;
+    --min-width-space: 375px;
+
+    display: flex;
+    flex-direction: column;
+    max-width: var(--wrapper-width);
+    max-height: 694px;
+    height: 80%;
+    font-size: 1.5rem;
+    padding-top: 48px;
+}

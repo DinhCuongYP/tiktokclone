@@ -1,0 +1,13 @@
+.wrapper {
+    --header-width: var(var(--width-default));
+    background-color: var(--white-color);
+    box-shadow: var(--box-shadow-header);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+.container {
+}

@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: var(--header-height);
+    max-width: var(--width-default);
+
+    .sidebar {
+        flex-shrink: 0;
+        width: 356px;
+    }
+
+    .content {
+        display: flex;
+        flex: 1 1 auto;
+        justify-content: flex-end;
+    }
+}

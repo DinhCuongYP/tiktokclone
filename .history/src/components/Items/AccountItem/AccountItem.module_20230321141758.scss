@@ -1,0 +1,57 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    border-radius: 4px;
+    color: inherit;
+    cursor: pointer;
+    padding: 8px;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+        background-color: var(--background-gray-color-03);
+    }
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: var(--default-background-media);
+}
+
+.body {
+    margin-left: 12px;
+    overflow: hidden;
+}
+
+.userName {
+    max-width: 260px;
+    margin-top: -2px;
+    font-weight: 700;
+    line-height: var(--line-height);
+}
+
+.name {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: var(--text-gray-color);
+}
+
+// --------------------------------------------
+.wrapper-preview {
+    width: 320px !important;
+    padding: 20px !important;
+}
+
+.preview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.btn-follow {
+}

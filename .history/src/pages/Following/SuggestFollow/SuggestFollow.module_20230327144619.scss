@@ -1,0 +1,36 @@
+.wrapper {
+    min-width: 692px;
+}
+
+.suggest-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -9px;
+}
+
+.suggest-item {
+    flex-basis: 33.33333%;
+    margin-bottom: 18px;
+    max-width: 33.333333%;
+    min-width: 230px;
+    padding: 0 9px;
+}
+
+.content-wrapper {
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.short-info {
+    position: absolute;
+    top: auto;
+    padding: 20px 12px;
+    text-align: center;
+    inset: 0;
+    color: #fff;
+    transform: scale(0.94);
+    z-index: 10;
+}

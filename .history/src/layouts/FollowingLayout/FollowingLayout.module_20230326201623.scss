@@ -1,0 +1,7 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: var(--width-default);
+    margin: 0 auto;
+    margin-top: var(--header-height);
+}

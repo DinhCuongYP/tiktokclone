@@ -1,0 +1,6 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--header-height) auto 0;
+    width: var(--width-default);
+}

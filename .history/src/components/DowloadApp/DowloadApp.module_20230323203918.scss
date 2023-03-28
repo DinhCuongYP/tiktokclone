@@ -1,0 +1,72 @@
+.wrapper {
+    position: fixed;
+    right: 24px;
+    bottom: -40px;
+    z-index: 10;
+    text-align: right;
+    transition: all 400ms cubic-bezier(0.65, 0, 0.35, 1);
+
+    &.show-icon-scroll {
+        bottom: 0;
+    }
+}
+
+.main-down-btn {
+    font-size: 1.4rem;
+    font-weight: bold;
+    min-height: 32px;
+    min-width: 90px;
+    padding: 0 8px !important;
+    color: var(--text-gray-color);
+    background-color: var(--white-color-3);
+    border-radius: 9999px !important;
+    border-color: rgba(22, 24, 35, 0.12);
+}
+
+.download-app {
+    position: relative;
+}
+
+.scroll-to-top {
+    margin-bottom: 8px;
+    margin-top: 12px;
+}
+
+.icon-scroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: #fff;
+    cursor: pointer;
+}
+
+.download-for {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 384px;
+}
+
+.download-content {
+    padding: 0 48px 0 16px;
+    width: 100%;
+    max-height: inherit;
+    overflow: hidden auto;
+    border-radius: 8px;
+    background-color: var(--white-color-3);
+    box-shadow: var(--box-shadow-popper-2);
+}
+
+.download-btn {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 38px;
+    font-weight: 700;
+    margin: 6px 0;
+}

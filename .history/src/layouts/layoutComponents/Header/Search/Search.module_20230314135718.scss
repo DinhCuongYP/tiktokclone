@@ -1,0 +1,9 @@
+.wrapper {
+    display: flex;
+    width: var(--search-container-width);
+    height: var(--search-container-height);
+    // overflow: hidden;
+    border-radius: var(--search-border-radius);
+    border: 1px solid transparent;
+    background-color: #f1f1f2;
+}

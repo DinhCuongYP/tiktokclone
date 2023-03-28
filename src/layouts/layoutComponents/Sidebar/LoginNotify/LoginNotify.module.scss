@@ -1,0 +1,25 @@
+.login-notify {
+    padding: 20px 8px 24px;
+}
+
+.text {
+    color: var(--text-gray-color2);
+    line-height: var(--line-height);
+    margin-bottom: 20px;
+}
+
+.btn-login {
+    font-size: 1.8rem;
+    font-weight: 600;
+    min-width: 168px;
+    padding: 6px 8px;
+    width: 100%;
+    color: var(--primary);
+    border-color: currentColor;
+    min-height: 48px;
+    background-color: var(--white-color-2);
+
+    &:hover {
+        background-color: var(--background-primary-color-2);
+    }
+}

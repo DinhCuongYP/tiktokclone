@@ -1,0 +1,16 @@
+.wrapper {
+    width: inherit;
+}
+
+.inner-fixed {
+    position: fixed;
+    bottom: 0;
+    top: var(--header-height);
+    width: inherit;
+    background-color: var(--white-color);
+    z-index: 10;
+}
+
+.content {
+    padding: 20px 8px 26px;
+}

@@ -1,0 +1,8 @@
+.wrapper {
+    --width-layout: 1150px;
+}
+
+.header {
+    --header-width: var(var(--width-layout));
+    background-color: var(--white-color);
+}

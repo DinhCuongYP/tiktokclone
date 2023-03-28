@@ -1,0 +1,138 @@
+.wrapper {
+    display: flex;
+    padding: 20px 0;
+    position: relative;
+    scroll-margin-top: var(--line-height);
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        inset: 0;
+        top: auto;
+        transform: translateY(0.5);
+        background-color: var(--background-gray-color-02);
+    }
+}
+
+.avatar {
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: var(--default-background-media);
+}
+
+.body {
+    margin-left: 12px;
+}
+
+.video-info {
+    margin-right: 114px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.small-avatar {
+    height: 40px;
+    width: 40px;
+    margin-right: 12px;
+    display: none;
+}
+
+.user-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    margin-right: 4px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.full-name {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.follow-btn {
+    position: absolute;
+    right: 0;
+    top: 28px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background-color: var(--white-color-2);
+    font-weight: 600;
+    min-height: 28px;
+    min-width: 88px;
+    padding: 0 10px;
+
+    &:hover {
+        background-color: var(--background-primary-color-2);
+    }
+}
+
+.description {
+    line-height: var(--line-height);
+    margin: 2px 0;
+}
+
+.music-info {
+    display: inline-flex;
+    font-weight: 600;
+    line-height: var(--line-height);
+    align-items: center;
+    margin-left: 0;
+    margin-top: 2px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.icon-music {
+    margin-right: 4px;
+}
+
+.video-player {
+    display: flex;
+    margin-top: 8px;
+}
+
+.interactive-space {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.interactive-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+    font-size: 2.4rem;
+    margin-top: 6px;
+    margin-top: 8px;
+    border-radius: 50%;
+    color: var(--text-primary-color);
+    background-color: var(--background-color-gray-06);
+}
+
+.item-count {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    color: var(--text-gray-color);
+    white-space: nowrap;
+}

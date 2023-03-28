@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    margin-top: var(--header-height);
+}
+
+.sidebar {
+    flex-shrink: 0;
+    width: 240px;
+}
+
+.wrapper-content {
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 100%;
+    max-width: 1328px;
+}
