@@ -16,7 +16,7 @@ export const getSuggestedAccount = async (per_page, page = 1) => {
 };
 
 export const getUserAccount = async (username) => {
-    const dataResponse = await httpRequest.get('users/@' + username);
+    const dataResponse = await httpRequest.get('users/' + username);
 
     if (dataResponse.status === 404) {
         return;

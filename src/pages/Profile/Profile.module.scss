@@ -1,14 +1,136 @@
 .wrapper {
-    padding: 20px;
+    padding: 32px 24px;
+    scroll-margin-top: var(--header-height);
 }
 
-.profile {
+.user-container {
+    max-width: 624px;
+    padding-right: 92px;
+
+    position: relative;
+}
+
+.action {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
+
+.icon {
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+.icon + .icon {
+    margin-left: 16px;
+}
+
+.account-info {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    cursor: pointer;
 }
 
-.avatar {
-    width: 200px;
-    height: 200px;
+.avartar {
+    height: 116px;
+    width: 116px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.account-username {
+    font-size: 3.2rem;
+    line-height: 38px;
+    margin: 0;
+    padding-bottom: 4px;
+}
+
+.account-fullname {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 25px;
+    margin: 0;
+}
+
+.btn-follow {
+    min-width: 208px;
+    font-size: 1.8rem;
+    margin-top: 16px;
+}
+
+.count-info {
+    margin-top: 22px;
+}
+
+.num-count {
+    font-size: 1.8rem;
+}
+
+.num-count + .title-count {
+    margin-right: 20px;
+}
+
+.title-count {
+    color: var(--text-gray-color);
+    font-weight: 400;
+    margin-left: 6px;
+}
+
+.bio-info {
+    line-height: var(--header-height);
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.more-popper {
+    padding: 8px 0;
+}
+
+.arrow-popper {
+    position: absolute;
+    left: 0;
+    transform: translate3d(160px, 0px, 0px);
+    height: 9px;
+    overflow-y: clip;
+    top: -9px;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        transform: translateX(-50%) translateY(25%) rotate(45deg);
+        background-color: var(--white-color-3);
+        box-shadow: var(--box-shadow-popper);
+    }
+}
+
+.more-item {
+    background-color: transparent;
+    border: 0;
+    justify-content: flex-start;
+    min-height: 49px;
+    min-width: 180px;
+    position: relative;
+
+    &:last-child::after {
+        content: '';
+        position: absolute;
+        left: 16px;
+        right: 16px;
+        height: 1px;
+        top: 0;
+        background-color: var(--background-gray-color-12);
+        transform: scaleY(0.99);
+    }
+}
+
+.item-text {
+    margin-left: 15px;
+}
+
+.more-item + .more-item {
+    margin: 0;
 }

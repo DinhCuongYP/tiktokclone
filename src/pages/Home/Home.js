@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 import { useEffect, useRef, useState } from 'react';
 import { videoSevice } from '~/sevices';
 import { InView } from 'react-intersection-observer';
@@ -21,7 +22,9 @@ function Home() {
         const fetchApiVideo = async () => {
             const result = await videoSevice.getSuggesVideo(page);
 
-            result.sort(() => Math.random() - 0.5);
+            if (result != undefined && result != null) {
+                result.sort(() => Math.random() - 0.5);
+            }
 
             setVideoList([...result, ...videoList]);
         };

@@ -1,0 +1,130 @@
+.video-container {
+    margin-top: 20px;
+}
+
+.tab-list {
+    position: relative;
+    display: flex;
+    width: 460px;
+    height: 44px;
+    margin-bottom: 8px;
+    color: var(--text-primary-color);
+}
+
+.tab-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1;
+    font-size: 1.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--text-gray-color2);
+
+    &.active {
+        color: currentColor;
+    }
+
+    span {
+        margin-left: 6px;
+    }
+}
+
+.tab-item:nth-child(1) {
+    &:hover {
+        ~ .tab-line {
+            transform: translateX(0) !important;
+        }
+    }
+
+    &:active {
+        ~ .tab-line {
+            transform: translateX(0);
+        }
+    }
+}
+
+.tab-item:nth-child(2) {
+    &:hover {
+        ~ .tab-line {
+            transform: translateX(100%) !important;
+        }
+    }
+
+    &:active {
+        ~ .tab-line {
+            transform: translateX(100%);
+        }
+    }
+}
+
+.tab-line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 2px;
+    transition: all 0.3s;
+    background-color: currentColor;
+}
+
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -8px;
+}
+
+.video-item {
+    cursor: pointer;
+    flex-basis: 25%;
+    margin-bottom: 24px;
+    max-width: 25%;
+    padding: 0 8px;
+}
+
+.item-content {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 108px;
+        inset: 0;
+        background: linear-gradient(rgba(22, 24, 35, 0) 2.92%, rgba(22, 24, 35, 0.5) 98.99%);
+        top: auto;
+    }
+}
+
+.content_view-count {
+    display: flex;
+    align-items: center;
+    bottom: 12px;
+    left: 12px;
+    color: #fff;
+    z-index: 3;
+
+    position: absolute;
+
+    strong {
+        font-weight: 600;
+        margin-left: 4px;
+    }
+}
+
+.item-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-weight: 400;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+@media (min-width: 1472px) {
+    .video-item {
+        flex-basis: 16.6667%;
+        max-width: 16.6667%;
+    }
+}
