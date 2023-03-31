@@ -23,3 +23,9 @@
         background-color: var(--background-primary-color-2);
     }
 }
+
+@media (max-width: 1071px) {
+    .login-notify {
+        display: none;
+    }
+}

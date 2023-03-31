@@ -117,3 +117,9 @@ input:not(:placeholder-shown) ~ .btn-search {
         background-color: var(--background-color-gray-06);
     }
 }
+
+@media (max-width: 767px) {
+    .wrapper {
+        display: none;
+    }
+}

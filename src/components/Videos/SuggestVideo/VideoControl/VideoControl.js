@@ -187,9 +187,9 @@ function VideoControl({ videoInfo, videoId }) {
         };
     };
 
-    // const handleTest = () => {
-    // VideoModalShow();
-    // };
+    const handleTest = () => {
+        VideoModalShow();
+    };
 
     return (
         <div className={cx('player-space', directionVideoClass)}>
@@ -201,7 +201,7 @@ function VideoControl({ videoInfo, videoId }) {
                 onWaiting={() => setLoading(true)}
                 onPlaying={() => setLoading(false)}
                 ref={videoRef}
-                // onClick={handleTest}
+                onClick={handleTest}
             >
                 <source src={videoUrl} />
             </video>

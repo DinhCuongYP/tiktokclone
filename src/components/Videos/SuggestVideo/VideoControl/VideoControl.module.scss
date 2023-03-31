@@ -155,3 +155,16 @@
         background-color: currentColor;
     }
 }
+
+@media (max-width: 767px) {
+    .player-space {
+        height: calc(380px + (100vw - 480px) / 288 * 20) !important;
+    }
+}
+
+@media (max-width: 479px) {
+    .player-space {
+        width: calc(100vw - 32px - 60px);
+        height: auto !important;
+    }
+}

@@ -18,3 +18,10 @@
         margin-right: 24px;
     }
 }
+
+@media (max-width: 1071px) {
+    .sidebar {
+        width: 72px;
+        flex: 0 0 72px;
+    }
+}

@@ -136,3 +136,68 @@
     color: var(--text-gray-color);
     white-space: nowrap;
 }
+
+@media (max-width: 767px) {
+    .wrapper {
+        width: calc(100vw - 32px - 68px);
+    }
+
+    .item-icon {
+        width: 32px;
+        height: 32px;
+        padding: 6px;
+
+        font-size: 20px;
+    }
+
+    .user-name {
+        display: block;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: normal;
+    }
+
+    .full-name {
+        display: block;
+        line-height: 20px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .music-info {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 1071px) {
+    .wrapper {
+        max-width: 592px;
+    }
+}
+
+@media (max-width: 479px) {
+    .avatar {
+        display: none;
+    }
+
+    .small-avatar {
+        display: block;
+    }
+
+    .name {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .body {
+        margin-left: 0;
+        width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .user-info {
+        margin-bottom: 12px;
+    }
+}

@@ -20,3 +20,17 @@
     padding: var(--padding-spacer);
     padding-bottom: 0;
 }
+
+@media (max-width: 1071px) {
+    .wrapper {
+        padding: 8px 0;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .seeall-btn {
+        display: none;
+    }
+}

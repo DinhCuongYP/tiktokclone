@@ -108,3 +108,43 @@
 .link-item:hover {
     text-decoration: underline;
 }
+
+//  Reponsive
+
+@media (max-width: 1071px) {
+    .wrapper {
+        padding: 0 8px;
+        width: 72px;
+        flex: 0 0 72px;
+        border-right: 1px solid rgba(22, 24, 35, 0.12);
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .inner-fixed {
+        padding: 12px 0 26px;
+    }
+
+    .discover-wrapper {
+        display: none;
+    }
+
+    .container-footer {
+        display: none;
+    }
+
+    .scrollbar-view {
+        padding: 0 8px;
+        width: 72px;
+        flex: 0 0 72px;
+        border-right: 1px solid rgba(22, 24, 35, 0.12);
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .scrollbar-track {
+        display: none;
+    }
+
+    .content {
+        padding: 0;
+    }
+}
