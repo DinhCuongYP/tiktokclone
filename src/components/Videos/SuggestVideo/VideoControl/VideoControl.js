@@ -201,7 +201,7 @@ function VideoControl({ videoInfo, videoId }) {
                 onWaiting={() => setLoading(true)}
                 onPlaying={() => setLoading(false)}
                 ref={videoRef}
-                onClick={handleTest}
+                // onClick={handleTest}
             >
                 <source src={videoUrl} />
             </video>
